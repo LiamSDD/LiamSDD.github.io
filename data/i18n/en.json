@@ -57,7 +57,7 @@
     },
     {
       "title": "Security built in",
-      "body": "Client- and server-side protection from my own commercial packer: code virtualisation, anti-tamper, exploit patching, encrypted traffic, and full authentication with server-validated keys, sessions and HMAC."
+      "body": "Client- and server-side protection from my own commercial packer: code virtualisation, anti-tamper, exploit patching, encrypted traffic, and full authentication with server-validated keys, sessions and HMAC. Learned and applied hands-on across many iterations of commercial production builds."
     }
   ],
   "card": {

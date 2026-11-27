@@ -57,7 +57,7 @@
     },
     {
       "title": "La sécurité intégrée",
-      "body": "Protection côté client et serveur issue de mon propre packer commercial : virtualisation du code, anti-falsification, correction de failles, trafic chiffré et authentification complète avec clés validées côté serveur, sessions et HMAC."
+      "body": "Protection côté client et serveur issue de mon propre packer commercial : virtualisation du code, anti-falsification, correction de failles, trafic chiffré et authentification complète avec clés validées côté serveur, sessions et HMAC. Acquis et appliqué en conditions réelles, sur de nombreuses itérations de builds commerciaux en production."
     }
   ],
   "card": {

@@ -21,8 +21,8 @@
   },
   "hero": {
     "status1": "Disponible",
-    "status2": "Télétravail",
-    "status3": "UE ou Canada",
+    "status2": "Basé en France",
+    "status3": "Full remote",
     "role1": "Ingénieur IA (Applied AI Engineer)",
     "role2": "spécialiste Claude Code",
     "lede": "Je livre rapidement de vrais produits avec des agents de code IA, dans un cadre de travail qui garde le code propre, testé et facile à relire.",
@@ -79,7 +79,7 @@
     "Article": "Article"
   },
   "footer": {
-    "meta": "Ingénieur IA (Applied AI Engineer) · spécialiste Claude Code. Disponible : télétravail, UE ou Canada.",
+    "meta": "Ingénieur IA (Applied AI Engineer) · spécialiste Claude Code. Disponible : basé en France, télétravail, UE ou Canada.",
     "github": "GitHub",
     "source": "Code source de ce site",
     "note": "HTML et CSS statiques. Aucun traceur, aucun cookie."

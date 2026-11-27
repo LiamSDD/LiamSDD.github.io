@@ -751,3 +751,7 @@ a:hover > .arrow-r { transform: translateX(3px); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+@media (max-width: 420px) {
+  .status { letter-spacing: 0.05em; gap: 4px 7px; }
+}

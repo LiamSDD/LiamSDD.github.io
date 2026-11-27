@@ -2,7 +2,7 @@
   "_help": "Interface copy in English (the default). fr.json has the same keys. Project copy lives in data/projects.json (French under each project's \"fr\" field).",
   "meta": {
     "title": "LiamSDD · Applied AI Engineer",
-    "description": "LiamSDD, Applied AI Engineer and Claude Code specialist. I ship real products fast with AI coding agents, in harnesses that keep the code clean, tested and easy to review. Open to work: remote, EU or Canada.",
+    "description": "LiamSDD, Applied AI Engineer and Claude Code specialist. I ship real products fast with AI coding agents, in harnesses that keep the code clean, tested and easy to review. Open to work: based in France, remote, EU or Canada.",
     "project": "{name} · LiamSDD",
     "notFound": "Not found · LiamSDD",
     "article": "{title} · LiamSDD"
@@ -21,8 +21,8 @@
   },
   "hero": {
     "status1": "Open to work",
-    "status2": "Remote",
-    "status3": "EU or Canada",
+    "status2": "Based in France",
+    "status3": "Remote",
     "role1": "Applied AI Engineer",
     "role2": "Claude Code specialist",
     "lede": "I ship real products fast with AI coding agents, in harnesses that keep the code clean, tested and easy to review.",
@@ -79,7 +79,7 @@
     "Article": "Article"
   },
   "footer": {
-    "meta": "Applied AI Engineer · Claude Code specialist. Open to work: remote, EU or Canada.",
+    "meta": "Applied AI Engineer · Claude Code specialist. Open to work: based in France, remote, EU or Canada.",
     "github": "GitHub",
     "source": "Source of this site",
     "note": "Static HTML and CSS. No trackers, no cookies."

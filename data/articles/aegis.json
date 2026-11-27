@@ -1,0 +1,251 @@
+{
+  "id": "aegis",
+  "project": "aegis",
+  "icon": "assets/icons/aegis.svg",
+  "en": {
+    "type": "Case study",
+    "title": "Aegis: protecting game builds without punishing paying players",
+    "description": "How I built Aegis, software protection and licensing for games and desktop apps: the architecture, the trade-offs that mattered, and what it reached.",
+    "lede": "How I built software protection and licensing for games and desktop apps: the architecture at block level, the trade-offs that mattered, and what the product reached.",
+    "factsLabel": "Key facts",
+    "facts": [
+      [
+        "Role",
+        "Founder and lead engineer"
+      ],
+      [
+        "Timeline",
+        "About 8 months, from late 2025"
+      ],
+      [
+        "Team",
+        "Me, with help from a few engineers in my network"
+      ],
+      [
+        "Stack",
+        "C and C++ protection engine · licensing server · React and Electron app"
+      ],
+      [
+        "Customers",
+        "Mid-size studios shipping on Steam, and independent developers"
+      ]
+    ],
+    "numbers": [
+      [
+        "3,000+",
+        "end-user licence activations"
+      ],
+      [
+        "7",
+        "protection layers per build"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "The problem",
+        "body": [
+          "A PC game makes most of its money in the first weeks after release. That is also when it is most exposed. A popular title can be cracked on launch day, and once a working crack circulates, the protection has done most of the work it will ever do.",
+          "Smaller studios face three problems at once:"
+        ],
+        "list": [
+          "Cracking: the executable is patched so that licence checks are skipped.",
+          "Key sharing: one purchased key ends up activating many machines.",
+          "Tooling cost: commercial protection suites are priced and built for large publishers, so an independent developer who wants more than a single licence check usually ends up building it."
+        ]
+      },
+      {
+        "heading": "The product",
+        "body": [
+          "Aegis protects games and desktop apps against cracking and key sharing. A developer drops in an unprotected build and gets back a protected one, with licensing and anti-tamper built in.",
+          "Each build ships with seven protection layers: licence check, hardware lock, anti-debug, integrity hash, code virtualisation, string encryption and packing. They are enforced on both the client and the server.",
+          "The design goal was that a developer can protect a build without becoming a reverse-engineering expert. No single layer is unbreakable. The point is to make cracking slow and to tie every copy to a real licence, so the launch window holds."
+        ]
+      },
+      {
+        "heading": "Architecture",
+        "body": [
+          "Three blocks, kept deliberately simple:"
+        ],
+        "list": [
+          "The developer app (React and Electron). This is where a developer picks a build, chooses which protections apply and manages licences and releases. It is a few clear choices, not a configuration language.",
+          "The protection service. Protection runs server-side, on the native engine written in C and C++: a custom packer, code virtualisation, encryption at rest and per-build stubs. The developer's machine never runs the protection pipeline itself.",
+          "The licensing server. It validates activations, binds each one to hardware and lets a developer revoke a key that has been shared or leaked. Because the server enforces these rules as well as the client, patching the client is not enough to make a copy legitimate."
+        ],
+        "after": [
+          "This page stays at block level on purpose. How each layer works is exactly what an attacker would want written down."
+        ]
+      },
+      {
+        "heading": "Trade-offs that mattered",
+        "body": [
+          "None of these has a perfect answer. Each one is a choice made on purpose."
+        ],
+        "list": [
+          "Virtualisation costs performance. Virtualised code runs far slower than native code, and a virtualised render loop is something players feel at once. So developers choose which functions get virtualised: the code an attacker cares about, such as licence logic, rather than frame-critical code. The protection is then only as strong as those choices, which makes the defaults and the guidance in the app as important as the engine.",
+          "Anti-debug has to be weighed against false positives. A player's PC runs plenty of legitimate software, and a protection that misreads it hurts a paying customer, not a cracker. Every detection is a balance between how much it protects and what a wrong call would cost in crashes, support and refunds. A protection product that generates refunds has failed even if it was never cracked.",
+          "A licence-server incident must not lock out paying players. Server-side enforcement is what makes key sharing expensive, but it also puts the server in the path of someone launching a game they paid for. Aegis rotates licence checks across servers, so during an incident, players who have already activated keep playing.",
+          "Every build is unique. Protection is fully polymorphic: no two builds share the same protected form, so work done against one release does not carry over to the next. The price is that a protected build cannot be regenerated from recorded inputs. Uniqueness was the priority, and each build is treated as the one artefact it is."
+        ]
+      },
+      {
+        "heading": "How it was built",
+        "body": [
+          "I was founder and lead engineer. Over about 8 months from late 2025, I designed and built the native engine, the licensing server and the app, with help from a few engineers in my network.",
+          "A team that small covering native code, a backend and a desktop app needs AI-assisted development to keep pace. It also needs guardrails. When it helped, I worked with coding agents inside an early private version of my own harness, the one now open source as Claude Code Harness Pro Max. That meant hooks that block destructive commands and leaked secrets, written plans before changes, tests first, and nothing counted as done until a test or build had run.",
+          "That discipline matters more in security code than anywhere else. A subtle bug in a licence check is a free copy of the game, and a subtle bug in an anti-debug check is a crash on a customer's machine. The agents made code cheap to write. Reviews, tests and checks against real builds decided what shipped."
+        ]
+      },
+      {
+        "heading": "Result",
+        "body": [
+          "More than 3,000 end-user licence activations, across games from mid-size studios shipping on Steam and from independent developers. The product runs end to end: protect a build, ship it, then activate and manage licences."
+        ]
+      },
+      {
+        "heading": "Considerations for the next version",
+        "body": [
+          "These are the engineering questions I would put first on a product like this, whoever builds it:"
+        ],
+        "list": [
+          "Measure the cost of each protection layer on representative games early, so guidance on what to virtualise rests on data.",
+          "Treat false-positive reports from developers as a first-class input, alongside new detections.",
+          "Write down and test how the product behaves when a server-side dependency fails, before the first incident rather than after it."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "shieldaegis.cloud",
+        "href": "https://shieldaegis.cloud"
+      },
+      {
+        "label": "Aegis project page and 30 s demo",
+        "href": "/work/aegis/"
+      }
+    ],
+    "footnote": "The source is private."
+  },
+  "fr": {
+    "type": "Case study",
+    "title": "Aegis : protéger les jeux sans pénaliser les joueurs qui paient",
+    "description": "Comment j'ai construit Aegis, une solution de protection logicielle et de gestion de licences pour jeux vidéo et applications desktop : architecture, arbitrages et résultats.",
+    "lede": "Comment j'ai construit une solution de protection logicielle et de gestion de licences pour jeux vidéo et applications desktop : l'architecture dans ses grandes lignes, les arbitrages qui ont compté et les résultats.",
+    "factsLabel": "L'essentiel",
+    "facts": [
+      [
+        "Rôle",
+        "Fondateur et lead dev"
+      ],
+      [
+        "Durée",
+        "Environ 8 mois, à partir de fin 2025"
+      ],
+      [
+        "Équipe",
+        "Moi, avec l'aide de quelques ingénieurs de mon réseau"
+      ],
+      [
+        "Stack",
+        "Moteur de protection en C et C++ · serveur de licences · application React et Electron"
+      ],
+      [
+        "Clients",
+        "Studios de taille moyenne qui publient sur Steam, et développeurs indépendants"
+      ]
+    ],
+    "numbers": [
+      [
+        "3 000+",
+        "activations de licence"
+      ],
+      [
+        "7",
+        "couches de protection par build"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "Le problème",
+        "body": [
+          "Un jeu PC réalise l'essentiel de son chiffre d'affaires dans les premières semaines après sa sortie. C'est aussi le moment où il est le plus exposé. Un titre populaire peut être piraté le jour même de sa sortie, et dès qu'un crack fonctionnel circule, la protection a déjà joué l'essentiel de son rôle.",
+          "Les petits studios cumulent trois difficultés :"
+        ],
+        "list": [
+          "Le crack : l'exécutable est modifié pour sauter les vérifications de licence.",
+          "Le partage de clés : une clé achetée une fois finit par activer des dizaines de machines.",
+          "Le coût des outils : les suites de protection du marché sont pensées et tarifées pour les grands éditeurs. Un développeur indépendant qui veut plus qu'une simple vérification de licence finit souvent par la construire lui-même."
+        ]
+      },
+      {
+        "heading": "Le produit",
+        "body": [
+          "Aegis protège les jeux vidéo et les applications desktop contre le piratage et le partage de clés. Un développeur dépose un build non protégé et récupère un build protégé, avec licences et anti-falsification intégrés.",
+          "Chaque build embarque sept couches de protection : vérification de licence, verrouillage matériel, anti-debug, hash d'intégrité, virtualisation du code, chiffrement des chaînes et packing. Elles sont appliquées côté client comme côté serveur.",
+          "L'objectif : qu'un développeur puisse protéger un build sans devenir expert en rétro-ingénierie. Aucune couche n'est inviolable à elle seule. Il s'agit de rendre le crack lent et de rattacher chaque copie à une vraie licence, pour que la fenêtre de lancement tienne."
+        ]
+      },
+      {
+        "heading": "Architecture",
+        "body": [
+          "Trois blocs, volontairement simples :"
+        ],
+        "list": [
+          "L'application pour les développeurs (React et Electron). Le développeur y choisit un build, sélectionne les protections à appliquer et gère ses licences et ses versions. Quelques choix clairs, pas un langage de configuration.",
+          "Le service de protection. La protection s'exécute côté serveur, sur le moteur natif écrit en C et C++ : packer maison, virtualisation du code, chiffrement au repos et stubs propres à chaque build. La machine du développeur n'exécute jamais elle-même la chaîne de protection.",
+          "Le serveur de licences. Il valide les activations, lie chacune d'elles au matériel et permet au développeur de révoquer une clé partagée ou divulguée. Comme le serveur applique ces règles en plus du client, modifier le client ne suffit pas à rendre une copie légitime."
+        ],
+        "after": [
+          "Cette page reste volontairement au niveau des grands blocs : le détail de chaque couche est précisément ce qu'un attaquant aimerait lire."
+        ]
+      },
+      {
+        "heading": "Les arbitrages qui ont compté",
+        "body": [
+          "Aucune de ces questions n'a de réponse parfaite. Chaque fois, il a fallu trancher."
+        ],
+        "list": [
+          "La virtualisation a un coût en performance. Le code virtualisé tourne beaucoup plus lentement que le code natif, et une boucle de rendu virtualisée se ressent immédiatement en jeu. Ce sont donc les développeurs qui choisissent les fonctions à virtualiser : le code qui intéresse un attaquant, comme la logique de licence, plutôt que le code critique pour la fluidité. La protection dépend alors de ces choix, ce qui rend les réglages par défaut et les conseils de l'application aussi importants que le moteur.",
+          "L'anti-debug doit composer avec les faux positifs. Le PC d'un joueur fait tourner quantité de logiciels légitimes, et une protection qui se trompe pénalise un client qui a payé, pas un pirate. Chaque détection est un équilibre entre ce qu'elle protège et ce que coûterait une erreur en plantages, en support et en remboursements. Une protection qui génère des remboursements a échoué, même si elle n'a jamais été crackée.",
+          "Un incident sur le serveur de licences ne doit pas bloquer les joueurs qui ont payé. La vérification côté serveur rend le partage de clés coûteux, mais elle place aussi le serveur entre le joueur et le jeu qu'il a acheté. Aegis répartit les vérifications de licence sur plusieurs serveurs en rotation : pendant un incident, les joueurs déjà activés continuent de jouer.",
+          "Chaque build est unique. La protection est entièrement polymorphe : deux builds ne partagent jamais la même forme protégée, si bien que le travail fait sur une version ne sert à rien sur la suivante. La contrepartie : un build protégé ne peut pas être régénéré à partir des mêmes entrées. L'unicité passe en premier, et chaque build est traité comme l'exemplaire unique qu'il est."
+        ]
+      },
+      {
+        "heading": "Comment il a été construit",
+        "body": [
+          "J'étais fondateur et lead dev. En environ 8 mois à partir de fin 2025, j'ai conçu et développé le moteur natif, le serveur de licences et l'application, avec l'aide de quelques ingénieurs de mon réseau.",
+          "Une équipe aussi réduite, qui couvre à la fois du code natif, un backend et une application desktop, a besoin du développement assisté par IA pour tenir le rythme. Et de garde-fous. Quand c'était utile, j'ai travaillé avec des agents de code dans une première version privée de mon propre cadre de travail, celui qui est aujourd'hui open source sous le nom Claude Code Harness Pro Max : des hooks qui bloquent les commandes destructrices et les fuites de secrets, un plan écrit avant chaque changement, les tests d'abord, et rien de terminé tant qu'un test ou un build n'a pas tourné.",
+          "Cette rigueur compte encore plus dans du code de sécurité. Un bug subtil dans une vérification de licence, c'est une copie gratuite du jeu ; un bug subtil dans l'anti-debug, c'est un plantage chez un client. Les agents ont rendu le code bon marché à écrire. Ce sont les revues, les tests et les essais sur de vrais builds qui ont décidé de ce qui partait en production."
+        ]
+      },
+      {
+        "heading": "Résultat",
+        "body": [
+          "Plus de 3 000 activations de licence par des joueurs, sur des jeux de studios de taille moyenne qui publient sur Steam et de développeurs indépendants. Le produit fonctionne de bout en bout : protéger un build, le publier, puis activer et gérer les licences."
+        ]
+      },
+      {
+        "heading": "Pistes pour la suite",
+        "body": [
+          "Voici les questions d'ingénierie que je placerais en tête sur un produit de ce type, quelle que soit l'équipe :"
+        ],
+        "list": [
+          "Mesurer tôt le coût de chaque couche de protection sur des jeux représentatifs, pour que les conseils de virtualisation reposent sur des données.",
+          "Traiter les signalements de faux positifs des développeurs comme une donnée de premier plan, au même titre que les nouvelles détections.",
+          "Écrire et tester le comportement du produit quand une dépendance côté serveur tombe, avant le premier incident plutôt qu'après."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "shieldaegis.cloud",
+        "href": "https://shieldaegis.cloud"
+      },
+      {
+        "label": "Page du projet Aegis et démo de 31 s",
+        "href": "/work/aegis/"
+      }
+    ],
+    "footnote": "Le code source est privé."
+  }
+}

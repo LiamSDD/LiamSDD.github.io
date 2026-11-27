@@ -1,0 +1,60 @@
+{
+  "_help": "contact is the one place to change the Contact link and email line (hero and footer read it); booking is the intro-call link shown next to the email (hidden while href is empty). stats = hero numbers. fr = French versions of the note, booking label and stats.",
+  "contact": {
+    "label": "Contact",
+    "href": "mailto:liam@ozcagency.com",
+    "email": "liam@ozcagency.com",
+    "note": "my own agency's domain"
+  },
+  "booking": {
+    "label": "Book a 20-min intro call",
+    "href": "https://cal.com/liamsdd/intro-call"
+  },
+  "github": "https://github.com/LiamSDD",
+  "source": "https://github.com/LiamSDD/LiamSDD.github.io",
+  "demo": "https://delegate-beryl.vercel.app",
+  "stats": [
+    {
+      "value": "3,000+",
+      "label": "licence activations with Aegis"
+    },
+    {
+      "value": "5",
+      "label": "products built and shipped"
+    },
+    {
+      "value": "~2 yrs",
+      "label": "engineering with coding agents daily"
+    },
+    {
+      "value": "3,349",
+      "label": "tests across my open-source projects"
+    }
+  ],
+  "fr": {
+    "contact": {
+      "note": "adresse de ma propre agence"
+    },
+    "booking": {
+      "label": "Réserver un appel de 20 min"
+    },
+    "stats": [
+      {
+        "value": "3 000+",
+        "label": "activations de licence avec Aegis"
+      },
+      {
+        "value": "5",
+        "label": "produits conçus et lancés"
+      },
+      {
+        "value": "~2 ans",
+        "label": "de développement avec des agents IA"
+      },
+      {
+        "value": "3 349",
+        "label": "tests dans mes projets open source"
+      }
+    ]
+  }
+}

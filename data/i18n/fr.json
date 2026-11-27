@@ -1,0 +1,97 @@
+{
+  "_help": "Textes de l'interface en français. Mêmes clés que en.json. Les textes des projets sont dans data/projects.json, champ \"fr\" de chaque projet.",
+  "meta": {
+    "title": "LiamSDD · Ingénieur IA (Applied AI Engineer)",
+    "description": "LiamSDD, ingénieur IA (Applied AI Engineer) et spécialiste Claude Code. Je livre rapidement de vrais produits avec des agents de code IA, dans un cadre de travail qui garde le code propre, testé et facile à relire. Disponible en télétravail, UE ou Canada.",
+    "project": "{name} · LiamSDD",
+    "notFound": "Page introuvable · LiamSDD",
+    "article": "{title} · LiamSDD"
+  },
+  "skip": "Aller au contenu",
+  "nav": {
+    "primary": "Navigation principale",
+    "home": "LiamSDD, accueil",
+    "work": "Projets",
+    "approach": "Méthode",
+    "writing": "Articles",
+    "contact": "Contact",
+    "lang": "Langue",
+    "toLight": "Passer au thème clair",
+    "toDark": "Passer au thème sombre"
+  },
+  "hero": {
+    "status1": "Disponible",
+    "status2": "Télétravail",
+    "status3": "UE ou Canada",
+    "role1": "Ingénieur IA (Applied AI Engineer)",
+    "role2": "spécialiste Claude Code",
+    "lede": "Je livre rapidement de vrais produits avec des agents de code IA, dans un cadre de travail qui garde le code propre, testé et facile à relire.",
+    "demo": "Essayer la démo Delegate",
+    "github": "Profil GitHub",
+    "stats": "En bref",
+    "reel": "Voir la bande démo (90 s)"
+  },
+  "sections": {
+    "work": "Projets",
+    "workDek": "Les produits que j'ai fondés, et les outils avec lesquels je les construis.",
+    "workMeta": "{n} projets",
+    "tools": "Outils open source",
+    "also": "Également réalisés",
+    "approach": "Ma méthode",
+    "approachDek": "L'IA écrit le code vite. La méthode le rend fiable.",
+    "writing": "Articles",
+    "writingDek": "Études de cas et retours d'expérience sur le développement avec des agents."
+  },
+  "approach": [
+    {
+      "title": "Un cadre pour les agents",
+      "body": "Mes agents de code travaillent dans un cadre que j'ai conçu. Commandes risquées, fuites de secrets et affirmations non prouvées sont bloquées par du code, pas par un prompt."
+    },
+    {
+      "title": "Tests et vérification",
+      "body": "Tests d'abord, petites PR faciles à relire, revues indépendantes et evals : rien n'est terminé tant que ce n'est pas vérifié."
+    },
+    {
+      "title": "L'utilisateur au centre",
+      "body": "Je pars de ce que les gens voient et attendent, puis je conçois des parcours simples et rapides."
+    }
+  ],
+  "card": {
+    "fullVideo": "Vidéo complète",
+    "projectPage": "Page du projet",
+    "pause": "Mettre la vidéo en pause",
+    "play": "Lire la vidéo",
+    "numbers": "Chiffres clés",
+    "demo": "Démo {name}",
+    "fullDemo": "{name} · démo complète",
+    "close": "Fermer",
+    "closeLabel": "Fermer la vidéo"
+  },
+  "project": {
+    "allWork": "Tous les projets",
+    "next": "Projet suivant",
+    "facts": "En bref",
+    "role": "Rôle",
+    "stack": "Stack"
+  },
+  "writing": {
+    "Case study": "Étude de cas",
+    "Article": "Article"
+  },
+  "footer": {
+    "meta": "Ingénieur IA (Applied AI Engineer) · spécialiste Claude Code. Disponible : télétravail, UE ou Canada.",
+    "github": "GitHub",
+    "source": "Code source de ce site",
+    "note": "HTML et CSS statiques. Aucun traceur, aucun cookie."
+  },
+  "notFound": {
+    "title": "Rien ici.",
+    "sub": "Les projets sont à un clic.",
+    "back": "Retour au portfolio"
+  },
+  "error": "Cette section n'a pas pu se charger. Tous les projets sont sur GitHub.",
+  "article": {
+    "all": "Tous les articles",
+    "next": "Étude de cas suivante"
+  }
+}

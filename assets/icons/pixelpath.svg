@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="pixelpath">
+<title>pixelpath</title>
+<style>.fg{stroke:#17181a}.fgf{fill:#17181a}@media (prefers-color-scheme:dark){.fg{stroke:#ededec}.fgf{fill:#ededec}}</style>
+<g transform="translate(4 4) scale(2.8)" fill="none" stroke-width="1.5">
+<path class="fg" d="M4.25 15.75C5.5 9.5 14.5 10.5 15.75 4.25" stroke-linecap="square"/><g fill="#3fb767" stroke="none"><rect x="3" y="14.5" width="2.5" height="2.5"/><rect x="14.5" y="3" width="2.5" height="2.5"/><rect x="8.75" y="8.75" width="2.5" height="2.5"/></g>
+</g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="claude-ledger">
+<title>claude-ledger</title>
+<style>.fg{stroke:#17181a}.fgf{fill:#17181a}@media (prefers-color-scheme:dark){.fg{stroke:#ededec}.fgf{fill:#ededec}}</style>
+<g transform="translate(4 4) scale(2.8)" fill="none" stroke-width="1.5">
+<path class="fg" d="M4.25 16.25h11.5" stroke-linecap="square"/><path d="M6.5 13.25v-2.5M10 13.25v-5M13.5 13.25v-8" stroke="#e08a2e" stroke-linecap="square"/>
+</g>
+</svg>

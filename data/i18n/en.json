@@ -1,0 +1,97 @@
+{
+  "_help": "Interface copy in English (the default). fr.json has the same keys. Project copy lives in data/projects.json (French under each project's \"fr\" field).",
+  "meta": {
+    "title": "LiamSDD · Applied AI Engineer",
+    "description": "LiamSDD, Applied AI Engineer and Claude Code specialist. I ship real products fast with AI coding agents, in harnesses that keep the code clean, tested and easy to review. Open to work: remote, EU or Canada.",
+    "project": "{name} · LiamSDD",
+    "notFound": "Not found · LiamSDD",
+    "article": "{title} · LiamSDD"
+  },
+  "skip": "Skip to content",
+  "nav": {
+    "primary": "Primary",
+    "home": "LiamSDD, home",
+    "work": "Work",
+    "approach": "Approach",
+    "writing": "Writing",
+    "contact": "Contact",
+    "lang": "Language",
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme"
+  },
+  "hero": {
+    "status1": "Open to work",
+    "status2": "Remote",
+    "status3": "EU or Canada",
+    "role1": "Applied AI Engineer",
+    "role2": "Claude Code specialist",
+    "lede": "I ship real products fast with AI coding agents, in harnesses that keep the code clean, tested and easy to review.",
+    "demo": "Try the Delegate demo",
+    "github": "GitHub profile",
+    "stats": "Highlights",
+    "reel": "Watch the 90 s reel"
+  },
+  "sections": {
+    "work": "Work",
+    "workDek": "Products I founded and the tools I build them with.",
+    "workMeta": "{n} projects",
+    "tools": "Open-source tools",
+    "also": "Also built",
+    "approach": "How I work",
+    "approachDek": "AI writes the code fast. The process makes it trustworthy.",
+    "writing": "Writing",
+    "writingDek": "Case studies and notes on building with agents."
+  },
+  "approach": [
+    {
+      "title": "Harness-driven development",
+      "body": "Agents work inside a harness I wrote. Risky commands, leaked secrets and unproven claims are stopped by code, not by a prompt."
+    },
+    {
+      "title": "Tests and verification",
+      "body": "Tests first, small reviewable PRs, independent reviews and evals. Nothing is done until it's verified."
+    },
+    {
+      "title": "Users first",
+      "body": "I design from what people see and need, then build back to simple, fast flows."
+    }
+  ],
+  "card": {
+    "fullVideo": "Full video",
+    "projectPage": "Project page",
+    "pause": "Pause video",
+    "play": "Play video",
+    "numbers": "Key numbers",
+    "demo": "{name} demo",
+    "fullDemo": "{name} · full demo",
+    "close": "Close",
+    "closeLabel": "Close video"
+  },
+  "project": {
+    "allWork": "All work",
+    "next": "Next project",
+    "facts": "Facts",
+    "role": "Role",
+    "stack": "Stack"
+  },
+  "writing": {
+    "Case study": "Case study",
+    "Article": "Article"
+  },
+  "footer": {
+    "meta": "Applied AI Engineer · Claude Code specialist. Open to work: remote, EU or Canada.",
+    "github": "GitHub",
+    "source": "Source of this site",
+    "note": "Static HTML and CSS. No trackers, no cookies."
+  },
+  "notFound": {
+    "title": "Nothing here.",
+    "sub": "The work is one click away.",
+    "back": "Back to the portfolio"
+  },
+  "error": "This section could not load. All projects are on GitHub.",
+  "article": {
+    "all": "All writing",
+    "next": "Next case study"
+  }
+}

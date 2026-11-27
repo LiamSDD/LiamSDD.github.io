@@ -1,0 +1,799 @@
+{
+  "_help": "Project data. Order = order on the page. English is the default; each project's \"fr\" object overrides the same fields in French (links: list of French labels in the same order as \"links\"). Media live in data/media.json under the same id. Numbers come from the profile README and the repos; do not add any that are not there.",
+  "projects": [
+    {
+      "id": "aegis",
+      "tier": "major",
+      "name": "Aegis",
+      "icon": "assets/icons/aegis.svg",
+      "kind": "Product · Founder",
+      "tagline": "Software protection and licensing for games and desktop apps.",
+      "summary": "Code virtualisation, encryption at rest, licence keys and anti-tamper, enforced client and server side.",
+      "role": "Founder and lead engineer, about 8 months with a small team.",
+      "stackLabel": "Stack",
+      "stack": [
+        "C++",
+        "C",
+        "React",
+        "Electron"
+      ],
+      "numbers": [
+        {
+          "value": "3,000+",
+          "label": "licence activations"
+        },
+        {
+          "value": "7",
+          "label": "protection layers per build"
+        },
+        {
+          "value": "C/C++",
+          "label": "native protection engine"
+        }
+      ],
+      "links": [
+        {
+          "label": "shieldaegis.cloud",
+          "href": "https://shieldaegis.cloud",
+          "primary": true
+        }
+      ],
+      "footnote": "Private source.",
+      "details": [
+        {
+          "heading": "What it does",
+          "body": [
+            "Aegis protects games and desktop apps against cracking and key sharing. A developer drops in an unprotected build and it comes out with licensing and anti-tamper built in, with checks verified on the server so there is nothing local to patch out."
+          ],
+          "list": [
+            "Licence check",
+            "Hardware lock",
+            "Anti-debug",
+            "Integrity hash",
+            "Code virtualisation",
+            "String encryption",
+            "Packing"
+          ]
+        },
+        {
+          "heading": "My role",
+          "body": [
+            "Founder and lead engineer. I designed and built the native protection engine in C and C++, the licensing server, and the React and Electron app developers use to protect a build, over about 8 months from late 2025, with help from a few engineers in my network."
+          ]
+        },
+        {
+          "heading": "Outcome",
+          "body": [
+            "More than 3,000 end-user licence activations, across mid-size studios shipping on Steam and independent developers. The source is private."
+          ]
+        }
+      ],
+      "fr": {
+        "kind": "Produit · Fondateur",
+        "tagline": "Protection logicielle et gestion de licences pour jeux vidéo et applications desktop.",
+        "summary": "Virtualisation du code, chiffrement au repos, clés de licence et anti-falsification, côté client comme côté serveur.",
+        "role": "Fondateur et lead dev, environ 8 mois avec une petite équipe.",
+        "numbers": [
+          {
+            "value": "3 000+",
+            "label": "activations de licence"
+          },
+          {
+            "value": "7",
+            "label": "couches de protection par build"
+          },
+          {
+            "value": "C/C++",
+            "label": "moteur de protection natif"
+          }
+        ],
+        "footnote": "Code source privé.",
+        "details": [
+          {
+            "heading": "Ce que fait Aegis",
+            "body": [
+              "Aegis protège les jeux vidéo et les applications desktop contre le piratage et le partage de clés. Un développeur dépose un build non protégé et le récupère avec licences et anti-falsification intégrés. Les vérifications se font côté serveur : il n'y a rien à contourner en local."
+            ],
+            "list": [
+              "Vérification de licence",
+              "Verrouillage matériel",
+              "Anti-debug",
+              "Hash d'intégrité",
+              "Virtualisation du code",
+              "Chiffrement des chaînes",
+              "Packing"
+            ]
+          },
+          {
+            "heading": "Mon rôle",
+            "body": [
+              "Fondateur et lead dev. J'ai conçu et développé le moteur de protection natif en C et C++, le serveur de licences, et l'application React et Electron que les développeurs utilisent pour protéger un build. Environ 8 mois de travail à partir de fin 2025, avec l'aide de quelques ingénieurs de mon réseau."
+            ]
+          },
+          {
+            "heading": "Résultat",
+            "body": [
+              "Plus de 3 000 activations de licence, à des studios de taille moyenne qui publient sur Steam et à des développeurs indépendants. Le code source est privé."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "delegate",
+      "tier": "major",
+      "name": "Delegate",
+      "icon": "assets/icons/delegate.svg",
+      "kind": "Open source · Agent platform",
+      "tagline": "Turns a goal, a company URL or a repo into finished, verified work.",
+      "summary": "Agents run in parallel, every claim is checked against its source, and risky actions wait for approval.",
+      "role": "Sole engineer, directing coding agents inside my own harness.",
+      "stackLabel": "Stack",
+      "stack": [
+        "TypeScript",
+        "Next.js",
+        "Postgres (Neon)",
+        "Drizzle",
+        "MCP",
+        "Vercel"
+      ],
+      "numbers": [
+        {
+          "value": "2,700",
+          "label": "tests in the local gate"
+        },
+        {
+          "value": "5",
+          "label": "missions live, plus Autopilot"
+        },
+        {
+          "value": "0.2 s",
+          "label": "fork to first new event, live"
+        },
+        {
+          "value": "$0",
+          "label": "per run on free models"
+        }
+      ],
+      "links": [
+        {
+          "label": "Live demo",
+          "href": "https://delegate-beryl.vercel.app",
+          "primary": true
+        },
+        {
+          "label": "Case study",
+          "href": "https://github.com/LiamSDD/delegate/blob/main/docs/CASE_STUDY.md"
+        },
+        {
+          "label": "Source",
+          "href": "https://github.com/LiamSDD/delegate"
+        },
+        {
+          "label": "Architecture",
+          "href": "https://github.com/LiamSDD/delegate/blob/main/docs/ARCHITECTURE.md"
+        }
+      ],
+      "footnote": "",
+      "details": [
+        {
+          "heading": "What it does",
+          "body": [
+            "Paste a company URL, a GitHub repository or a goal. Delegate plans the work, waits for your approval, runs specialist agents in parallel, verifies every claim against its source and asks before anything risky happens. It is live on free open-weight models at $0 per run, with no sign-up.",
+            "Around the agents: a REST API with an SDK, a CLI and signed webhooks, and an MCP server so it can be called from Claude Code or Codex."
+          ]
+        },
+        {
+          "heading": "Architecture in five decisions",
+          "list": [
+            "A hand-written agent loop of about 170 lines instead of a framework, so capability checks, budgets and approvals sit at fixed, tested points.",
+            "A quarantined reader: untrusted pages are read by a tool-less model that returns only typed facts with verbatim quotes, and code verifies the quotes.",
+            "The event log is the source of truth. UI, trace, replay, fork and crash recovery are all folds over an append-only log.",
+            "Tenant isolation in Postgres, with forced row-level security and an app role that cannot bypass it.",
+            "Evals as gates, with confidence intervals; prompt changes are promoted only when they beat the baseline."
+          ]
+        },
+        {
+          "heading": "How it was built",
+          "body": [
+            "One engineer directing coding agents inside a harness. Each milestone: write the plan and its acceptance condition, fan independent features out to parallel agents in their own worktrees, merge in order, have separate security and correctness reviewers read the whole diff, fix every finding with a failing test first, then deploy and measure against real sites. A local gate of typecheck, lint, 2,700 tests, build, eval smoke and red-team runs before every push."
+          ]
+        },
+        {
+          "heading": "Results",
+          "list": [
+            "Company X-ray live eval: 81% pass (95% CI 57–93%, n=16), median 62 s, $0.",
+            "Fork from any step: first new event in 0.2 s on the live site.",
+            "Crawl engine: 150 pages in 15.5 s (was over 150 s), never more than 6 concurrent requests per host."
+          ]
+        },
+        {
+          "heading": "Not done yet",
+          "body": [
+            "No real users yet, eval samples are still small, and the Ship-a-PR flow has not opened a live pull request on a public repository."
+          ]
+        }
+      ],
+      "fr": {
+        "kind": "Open source · Plateforme d'agents",
+        "tagline": "À partir d'un objectif, du site d'une entreprise ou d'un dépôt GitHub, Delegate livre un travail abouti et vérifié.",
+        "summary": "Les agents travaillent en parallèle, chaque affirmation est sourcée, et toute action sensible attend votre feu vert.",
+        "role": "Seul ingénieur : je pilote des agents de code dans un cadre de travail que j'ai conçu.",
+        "numbers": [
+          {
+            "value": "2 700",
+            "label": "tests vérifiés avant chaque push"
+          },
+          {
+            "value": "5",
+            "label": "missions en ligne, plus Autopilot"
+          },
+          {
+            "value": "0,2 s",
+            "label": "d'un fork au premier événement, en ligne"
+          },
+          {
+            "value": "0 $",
+            "label": "par exécution, sur des modèles gratuits"
+          }
+        ],
+        "links": [
+          "Démo en ligne",
+          "Étude de cas (en anglais)",
+          "Code source",
+          "Architecture (en anglais)"
+        ],
+        "details": [
+          {
+            "heading": "Ce que fait Delegate",
+            "body": [
+              "Collez l'URL d'une entreprise, un dépôt GitHub ou un objectif. Delegate planifie le travail, attend votre feu vert, lance des agents spécialisés en parallèle, vérifie chaque affirmation à sa source et vous consulte avant toute action sensible. Il tourne en ligne sur des modèles open-weight gratuits, à 0 $ par exécution, sans inscription.",
+              "Autour des agents : une API REST avec SDK, une CLI et des webhooks signés, ainsi qu'un serveur MCP pour l'appeler depuis Claude Code ou Codex."
+            ]
+          },
+          {
+            "heading": "L'architecture en cinq décisions",
+            "list": [
+              "Une boucle d'agent écrite à la main, d'environ 170 lignes, plutôt qu'un framework : contrôles de capacités, budgets et validations se trouvent à des points fixes et testés.",
+              "Un lecteur en quarantaine : les pages non fiables sont lues par un modèle sans outils qui ne renvoie que des faits typés avec des citations exactes, et le code vérifie ces citations.",
+              "Le journal d'événements fait foi. Interface, trace, replay, fork et reprise après crash sont tous dérivés d'un journal append-only.",
+              "Isolation des tenants dans Postgres, avec row-level security forcée et un rôle applicatif qui ne peut pas la contourner.",
+              "Les evals servent de barrières de qualité, avec intervalles de confiance ; une modification de prompt n'est retenue que si elle fait mieux que la référence."
+            ]
+          },
+          {
+            "heading": "Comment je l'ai construit",
+            "body": [
+              "Un seul ingénieur qui pilote des agents de code dans un cadre de travail. À chaque jalon : écrire le plan et sa condition d'acceptation, répartir les fonctionnalités indépendantes entre des agents parallèles, chacun dans son worktree, fusionner dans l'ordre, faire relire tout le diff par des reviewers distincts (sécurité et exactitude), corriger chaque problème en commençant par un test qui échoue, puis déployer et mesurer sur de vrais sites. Une vérification locale (typecheck, lint, 2 700 tests, build, evals rapides et red team) tourne avant chaque push."
+            ]
+          },
+          {
+            "heading": "Résultats",
+            "list": [
+              "Eval en ligne de Company X-ray : 81 % de réussite (IC à 95 % : 57–93 %, n=16), médiane 62 s, 0 $.",
+              "Fork depuis n'importe quelle étape : premier nouvel événement en 0,2 s sur le site en ligne.",
+              "Moteur de crawl : 150 pages en 15,5 s (contre plus de 150 s avant), jamais plus de 6 requêtes simultanées par hôte."
+            ]
+          },
+          {
+            "heading": "Pas encore fait",
+            "body": [
+              "Pas encore de vrais utilisateurs, des échantillons d'eval encore petits, et le flux Ship-a-PR n'a pas encore ouvert de vraie pull request sur un dépôt public."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "uplyze",
+      "tier": "major",
+      "name": "Uplyze",
+      "icon": "assets/icons/uplyze.png",
+      "kind": "Product · AI copilot",
+      "tagline": "All-in-one growth AI for creators and businesses.",
+      "summary": "AI replies and DMs, content, scheduling and insights in one place.",
+      "role": "Designed, built and shipped as a live product.",
+      "stackLabel": "Scope",
+      "stack": [
+        "AI copilot",
+        "Scheduling",
+        "Content analytics",
+        "Workflow automation"
+      ],
+      "numbers": [
+        {
+          "value": "Live",
+          "label": "product on uplyze.ai"
+        },
+        {
+          "value": "3 plans",
+          "label": "Starter, Pro and Studio"
+        },
+        {
+          "value": "One hub",
+          "label": "Instagram, TikTok, Facebook, Threads and more"
+        }
+      ],
+      "links": [
+        {
+          "label": "uplyze.ai",
+          "href": "https://uplyze.ai",
+          "primary": true
+        }
+      ],
+      "footnote": "",
+      "details": [
+        {
+          "heading": "What it does",
+          "body": [
+            "One hub for growing an audience and turning it into customers. The AI copilot analyses what content performs, plans and schedules posts, and automates the marketing and sales work that usually needs several separate tools."
+          ],
+          "list": [
+            "The AI Content Assistant writes the caption and the hashtags.",
+            "One post goes to Instagram, Threads, Facebook and a Story, then into the Posts Queue.",
+            "Preview a Reel before it is scheduled.",
+            "Instagram Insights: demographics and reach.",
+            "Competitor Analyzer: one brand, every platform, side by side."
+          ]
+        },
+        {
+          "heading": "My role",
+          "body": [
+            "I designed, built and shipped Uplyze as a live product with Starter, Pro and Studio plans."
+          ]
+        }
+      ],
+      "fr": {
+        "kind": "Produit · Copilote IA",
+        "tagline": "La plateforme de croissance tout-en-un, propulsée par l'IA, pour les créateurs et les entreprises.",
+        "summary": "Réponses et messages privés automatisés, contenus, planification et statistiques au même endroit.",
+        "role": "Conçu, développé et lancé comme produit en ligne.",
+        "stackLabel": "Périmètre",
+        "stack": [
+          "Copilote IA",
+          "Planification",
+          "Analyse de contenu",
+          "Automatisation des workflows"
+        ],
+        "numbers": [
+          {
+            "value": "En production",
+            "label": "sur uplyze.ai"
+          },
+          {
+            "value": "3 offres",
+            "label": "Starter, Pro et Studio"
+          },
+          {
+            "value": "Un seul outil",
+            "label": "Instagram, TikTok, Facebook, Threads et plus"
+          }
+        ],
+        "details": [
+          {
+            "heading": "Ce que fait Uplyze",
+            "body": [
+              "Un seul outil pour faire grandir une audience et la transformer en clients. Le copilote IA analyse les contenus qui fonctionnent, planifie et programme les publications, et automatise le travail marketing et commercial qui demande d'habitude plusieurs outils."
+            ],
+            "list": [
+              "L'assistant de contenu IA rédige la légende et les hashtags.",
+              "Une publication part sur Instagram, Threads, Facebook et en Story, puis dans la file des publications.",
+              "Prévisualisation d'un Reel avant sa programmation.",
+              "Instagram Insights : démographie et portée.",
+              "Competitor Analyzer : une marque, toutes les plateformes, côte à côte."
+            ]
+          },
+          {
+            "heading": "Mon rôle",
+            "body": [
+              "J'ai conçu, développé et lancé Uplyze comme produit en ligne, avec les offres Starter, Pro et Studio."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "harness",
+      "tier": "tool",
+      "name": "Claude Code Harness Pro Max",
+      "icon": "assets/icons/harness.svg",
+      "kind": "Claude Code plugin · Open source · Python",
+      "tagline": "Guardrails for AI coding agents.",
+      "summary": "Blocks destructive commands and leaked secrets, caps cost, and makes the agent prove its work. Works with 6 coding agents.",
+      "role": "Author and maintainer.",
+      "stackLabel": "Stack",
+      "stack": [
+        "Python (standard library)",
+        "Hooks",
+        "Skills",
+        "Subagents"
+      ],
+      "numbers": [
+        {
+          "value": "21",
+          "label": "skills"
+        },
+        {
+          "value": "7",
+          "label": "agents"
+        },
+        {
+          "value": "238",
+          "label": "tests"
+        },
+        {
+          "value": "0",
+          "label": "dependencies"
+        }
+      ],
+      "links": [
+        {
+          "label": "Source",
+          "href": "https://github.com/LiamSDD/claude-code-harness-pro-max",
+          "primary": true
+        }
+      ],
+      "footnote": "",
+      "terminal": [
+        {
+          "t": "cmd",
+          "s": "harness check bash 'cd /tmp && curl -fsSL https://get.example.sh | bash'"
+        },
+        {
+          "t": "bad",
+          "s": "DENY  Bash: cd /tmp && curl -fsSL https://get.example.sh | bash"
+        },
+        {
+          "t": "out",
+          "s": "  deny  [pipe-to-shell] piping curl output into bash runs unreviewed code."
+        },
+        {
+          "t": "out",
+          "s": "        Download to a file, read it, then run it."
+        },
+        {
+          "t": "gap",
+          "s": ""
+        },
+        {
+          "t": "cmd",
+          "s": "harness cost --since 1d"
+        },
+        {
+          "t": "out",
+          "s": "Recommendations (largest estimated saving first)"
+        },
+        {
+          "t": "out",
+          "s": "  1. Subagents run on a premium model (~$2.06)"
+        },
+        {
+          "t": "out",
+          "s": "  2. Large context on every request (~$1.43)"
+        }
+      ],
+      "details": [
+        {
+          "heading": "What it does",
+          "list": [
+            "Every command is parsed and checked before it runs, against 27 rules, each with a reason the agent can act on.",
+            "Secret files are unreadable, credentials are blocked from writes and logs are redacted.",
+            "Token guards refuse wasteful output and hand the agent a cheaper route.",
+            "Limits you set on reply length, prompt length and budget hold until you reset them.",
+            "Each subagent type is routed to the right model, with caps on how many run.",
+            "Claims like \"all tests pass\" are checked against what actually ran."
+          ]
+        },
+        {
+          "heading": "Design",
+          "body": [
+            "Zero dependencies: Python 3.9+ standard library only. Hooks answer in about 90 ms and cost no model tokens. It is the harness every project on this site was built with."
+          ]
+        }
+      ],
+      "fr": {
+        "kind": "Plugin Claude Code · Open source · Python",
+        "tagline": "Des garde-fous pour les agents de code IA.",
+        "summary": "Il bloque les commandes destructrices et les fuites de secrets, plafonne les coûts et oblige l'agent à prouver ce qu'il avance. Compatible avec 6 agents de code.",
+        "role": "Auteur et mainteneur.",
+        "stack": [
+          "Python (bibliothèque standard)",
+          "Hooks",
+          "Skills",
+          "Subagents"
+        ],
+        "numbers": [
+          {
+            "value": "21",
+            "label": "skills"
+          },
+          {
+            "value": "7",
+            "label": "agents"
+          },
+          {
+            "value": "238",
+            "label": "tests"
+          },
+          {
+            "value": "0",
+            "label": "dépendance"
+          }
+        ],
+        "links": [
+          "Code source"
+        ],
+        "details": [
+          {
+            "heading": "Ce que fait le harness",
+            "list": [
+              "Chaque commande est analysée et vérifiée avant de s'exécuter, selon 27 règles qui donnent chacune une raison exploitable par l'agent.",
+              "Les fichiers secrets sont illisibles, les identifiants ne peuvent pas être écrits dans le code et les logs sont expurgés.",
+              "Des garde-fous sur les tokens refusent les sorties inutiles et proposent à l'agent une voie moins coûteuse.",
+              "Les limites que vous fixez sur la longueur des réponses, des prompts et sur le budget tiennent jusqu'à ce que vous les réinitialisiez.",
+              "Chaque type de subagent est routé vers le bon modèle, avec un plafond sur le nombre qui tournent en parallèle.",
+              "Les affirmations du type « tous les tests passent » sont confrontées à ce qui a réellement tourné."
+            ]
+          },
+          {
+            "heading": "Conception",
+            "body": [
+              "Aucune dépendance : uniquement la bibliothèque standard de Python 3.9+. Les hooks répondent en 90 ms environ et ne consomment aucun token. C'est le harness avec lequel j'ai construit chaque projet de ce site."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "claude-ledger",
+      "tier": "tool",
+      "name": "claude-ledger",
+      "icon": "assets/icons/claude-ledger.svg",
+      "kind": "CLI for Claude Code · Open source · Python",
+      "tagline": "See where your Claude Code tokens and dollars go.",
+      "summary": "Spend by model, project and session, with savings tips and their impact. Offline.",
+      "role": "Author and maintainer.",
+      "stackLabel": "Stack",
+      "stack": [
+        "Python (standard library)",
+        "CLI"
+      ],
+      "numbers": [
+        {
+          "value": "136",
+          "label": "tests"
+        },
+        {
+          "value": "0",
+          "label": "dependencies"
+        },
+        {
+          "value": "3",
+          "label": "outputs: Markdown, JSON, CSV"
+        }
+      ],
+      "links": [
+        {
+          "label": "Source",
+          "href": "https://github.com/LiamSDD/claude-ledger",
+          "primary": true
+        }
+      ],
+      "footnote": "",
+      "terminal": [
+        {
+          "t": "cmd",
+          "s": "claude-ledger"
+        },
+        {
+          "t": "out",
+          "s": "Claude Code usage  2026-11-01 to 2026-11-05, 4 sessions"
+        },
+        {
+          "t": "gap",
+          "s": ""
+        },
+        {
+          "t": "hi",
+          "s": "  Estimated cost  $1.54"
+        },
+        {
+          "t": "out",
+          "s": "  Requests        14"
+        },
+        {
+          "t": "out",
+          "s": "  Cache read      810.0k"
+        },
+        {
+          "t": "out",
+          "s": "  Cache hit rate  77.3%"
+        },
+        {
+          "t": "gap",
+          "s": ""
+        },
+        {
+          "t": "out",
+          "s": "  Main sessions   $1.42   92.1%"
+        },
+        {
+          "t": "out",
+          "s": "  Subagents       $0.12    7.9%"
+        }
+      ],
+      "details": [
+        {
+          "heading": "What it does",
+          "body": [
+            "A zero-dependency CLI that reads local Claude Code transcripts and shows where the money goes, by model, project, day, session and subagent. It then suggests savings with their estimated dollar impact. It never sends anything anywhere."
+          ]
+        },
+        {
+          "heading": "Why it matters",
+          "body": [
+            "AI features stay affordable only when spend is visible. Model routing, prompt caching and token budgets start with knowing which requests cost what."
+          ]
+        }
+      ],
+      "fr": {
+        "kind": "CLI pour Claude Code · Open source · Python",
+        "tagline": "Montre où partent vos tokens et vos dollars Claude Code.",
+        "summary": "Dépenses par modèle, projet et session, puis des économies chiffrées. Hors ligne.",
+        "role": "Auteur et mainteneur.",
+        "stack": [
+          "Python (bibliothèque standard)",
+          "CLI"
+        ],
+        "numbers": [
+          {
+            "value": "136",
+            "label": "tests"
+          },
+          {
+            "value": "0",
+            "label": "dépendance"
+          },
+          {
+            "value": "3",
+            "label": "formats : Markdown, JSON, CSV"
+          }
+        ],
+        "links": [
+          "Code source"
+        ],
+        "details": [
+          {
+            "heading": "Ce que fait claude-ledger",
+            "body": [
+              "Une CLI sans dépendance qui lit les transcripts locaux de Claude Code et montre où va l'argent : par modèle, projet, jour, session et subagent. Elle propose ensuite des économies, avec leur impact estimé en dollars. Rien n'est jamais envoyé nulle part."
+            ]
+          },
+          {
+            "heading": "Pourquoi c’est utile",
+            "body": [
+              "Les fonctionnalités IA ne restent abordables que si les dépenses sont visibles. Le routage des modèles, le prompt caching et les budgets de tokens commencent par savoir quelle requête coûte combien."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pixelpath",
+      "tier": "tool",
+      "name": "pixelpath",
+      "icon": "assets/icons/pixelpath.svg",
+      "kind": "Open source · Python",
+      "tagline": "Crisp SVG to PNG, standard library only.",
+      "summary": "Anti-aliased, transparent PNGs with no Cairo, no Pillow and safe XML handling.",
+      "role": "Author and maintainer.",
+      "stackLabel": "Stack",
+      "stack": [
+        "Python (zlib, struct, math, xml.etree)"
+      ],
+      "numbers": [
+        {
+          "value": "275",
+          "label": "tests"
+        },
+        {
+          "value": "0",
+          "label": "dependencies"
+        },
+        {
+          "value": "100 MP",
+          "label": "output cap, never unbounded"
+        }
+      ],
+      "links": [
+        {
+          "label": "Source",
+          "href": "https://github.com/LiamSDD/pixelpath",
+          "primary": true
+        }
+      ],
+      "footnote": "",
+      "terminal": [
+        {
+          "t": "cmd",
+          "s": "pip install git+https://github.com/LiamSDD/pixelpath"
+        },
+        {
+          "t": "cmd",
+          "s": "pixelpath logo.svg -o logo.png"
+        },
+        {
+          "t": "gap",
+          "s": ""
+        },
+        {
+          "t": "com",
+          "s": "# anti-aliased RGBA PNG, standard library only"
+        },
+        {
+          "t": "com",
+          "s": "# <!DOCTYPE / <!ENTITY refused before parsing"
+        },
+        {
+          "t": "com",
+          "s": "# max 16384 px per side, 100 megapixels total"
+        }
+      ],
+      "details": [
+        {
+          "heading": "What it does",
+          "body": [
+            "pixelpath turns icons, logos, badges and other path-based SVGs into PNG files using nothing but zlib, struct, math and xml.etree. If it runs CPython 3.9 or newer, it renders: CI runners, AWS Lambda, slim containers, Pyodide."
+          ]
+        },
+        {
+          "heading": "Safety",
+          "list": [
+            "Documents containing <!DOCTYPE or <!ENTITY are refused before parsing, which shuts the door on XXE and entity expansion.",
+            "Output is bounded at 16384 pixels per side and 100 megapixels in total; larger requests raise an error instead of exhausting memory."
+          ]
+        }
+      ],
+      "fr": {
+        "kind": "Open source · Python",
+        "tagline": "Convertit des SVG en PNG nets et transparents avec la seule bibliothèque standard de Python.",
+        "summary": "Anti-aliasing, transparence et analyse XML sécurisée, sans Cairo ni Pillow.",
+        "role": "Auteur et mainteneur.",
+        "numbers": [
+          {
+            "value": "275",
+            "label": "tests"
+          },
+          {
+            "value": "0",
+            "label": "dépendance"
+          },
+          {
+            "value": "100 MP",
+            "label": "taille de sortie plafonnée"
+          }
+        ],
+        "links": [
+          "Code source"
+        ],
+        "details": [
+          {
+            "heading": "Ce que fait pixelpath",
+            "body": [
+              "pixelpath transforme icônes, logos, badges et autres SVG à base de tracés en fichiers PNG, avec seulement zlib, struct, math et xml.etree. Partout où tourne CPython 3.9 ou plus récent, il fonctionne : runners de CI, AWS Lambda, conteneurs légers, Pyodide."
+            ]
+          },
+          {
+            "heading": "Sécurité",
+            "list": [
+              "Les documents contenant <!DOCTYPE ou <!ENTITY sont refusés avant l'analyse, ce qui ferme la porte aux attaques XXE et à l'expansion d'entités.",
+              "La sortie est limitée à 16 384 pixels par côté et 100 mégapixels au total ; au-delà, une erreur est levée au lieu d'épuiser la mémoire."
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "alsoBuilt": "ChatFlow, an AI assistant that answers Instagram Direct, Messenger and WhatsApp conversations in a natural tone, and Vocalis, which turns a consented voice, an instrumental and lyrics into a complete song in that voice. Both private source.",
+  "alsoBuilt_fr": "ChatFlow (réponses par IA sur Instagram, Messenger et WhatsApp) et Vocalis (génération de chansons par IA à partir d'une voix consentie)."
+}

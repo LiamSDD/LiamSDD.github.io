@@ -1,0 +1,81 @@
+{
+  "_help": "One entry per project id. loop = the clip that autoplays muted on the card (lazy-loaded near the viewport); poster = still shown before it plays and for reduced-motion visitors; full = video opened in the player on click. note = small caption under the video (empty = none). fr = French alt/note. Paths are relative to the site root.",
+  "aegis": {
+    "loop": "media/aegis-full.mp4",
+    "poster": "media/aegis-full-poster.jpg",
+    "full": "media/aegis-full.mp4",
+    "fullPoster": "media/aegis-full-poster.jpg",
+    "duration": "30 s",
+    "alt": "Aegis demo: an unprotected game build goes in and ships with seven protection layers.",
+    "note": "",
+    "fr": {
+      "alt": "Démo Aegis : un build de jeu non protégé entre et ressort avec sept couches de protection.",
+      "note": ""
+    }
+  },
+  "delegate": {
+    "loop": "media/delegate-full.mp4",
+    "poster": "media/delegate-full-poster.jpg",
+    "full": "media/delegate-full.mp4",
+    "fullPoster": "media/delegate-full-poster.jpg",
+    "duration": "62 s",
+    "alt": "Delegate demo: a company URL goes in, agents audit it in parallel, and Build it crawls the site into a tested assistant.",
+    "note": "Real live runs, unedited output; only the waiting is sped up.",
+    "fr": {
+      "alt": "Démo Delegate : une URL d'entreprise entre, des agents l'auditent en parallèle, puis Build it transforme le site en assistant testé.",
+      "note": "Exécutions réelles en ligne, sortie non retouchée ; seule l'attente est accélérée."
+    }
+  },
+  "uplyze": {
+    "loop": "media/uplyze-full.mp4",
+    "poster": "media/uplyze-full-poster.jpg",
+    "full": "media/uplyze-full.mp4",
+    "fullPoster": "media/uplyze-full-poster.jpg",
+    "duration": "59 s",
+    "alt": "Uplyze demo: AI replies to DMs in your tone, a DM campaign brings in leads, then captions, scheduling and insights.",
+    "note": "",
+    "fr": {
+      "alt": "Démo Uplyze : l'IA répond aux DM avec votre ton, une campagne de DM génère des leads, puis légendes, planification et statistiques.",
+      "note": ""
+    }
+  },
+  "harness": {
+    "loop": "media/harness-full.mp4",
+    "poster": "media/harness-full-poster.jpg",
+    "full": "media/harness-full.mp4",
+    "fullPoster": "media/harness-full-poster.jpg",
+    "duration": "37 s",
+    "alt": "Harness demo: it denies rm -rf /, blocks a leaked (made-up) key, sends back an unproven 'All tests pass', and asks for approval past a $2 budget.",
+    "note": "Real output from the hooks, recorded in a terminal.",
+    "fr": {
+      "alt": "Démo du harness : il refuse rm -rf /, bloque une clé divulguée (inventée), renvoie un « tous les tests passent » non prouvé, et demande une validation au-delà d'un budget de 2 $.",
+      "note": "Sortie réelle des hooks, enregistrée dans un terminal."
+    }
+  },
+  "claude-ledger": {
+    "loop": "media/claude-ledger-full.mp4",
+    "poster": "media/claude-ledger-poster.jpg",
+    "full": "media/claude-ledger-full.mp4",
+    "fullPoster": "media/claude-ledger-poster.jpg",
+    "duration": "32 s",
+    "alt": "claude-ledger demo: savings tips, each with what was measured and an estimated dollar impact.",
+    "note": "Run on the repo’s synthetic test data.",
+    "fr": {
+      "alt": "Démo claude-ledger : conseils d'économies avec leur impact en dollars, sur des données d'exemple.",
+      "note": "Exécuté sur les données de test synthétiques du dépôt."
+    }
+  },
+  "pixelpath": {
+    "loop": "media/pixelpath-full.mp4",
+    "poster": "media/pixelpath-poster.jpg",
+    "full": "media/pixelpath-full.mp4",
+    "fullPoster": "media/pixelpath-poster.jpg",
+    "duration": "29 s",
+    "alt": "pixelpath demo: three SVG files rendered to transparent, anti-aliased PNGs with the standard library only.",
+    "note": "Real output, recorded in a terminal.",
+    "fr": {
+      "alt": "Démo pixelpath : des icônes SVG rendues en PNG transparents, sans dépendance.",
+      "note": "Sortie réelle, enregistrée dans un terminal."
+    }
+  }
+}

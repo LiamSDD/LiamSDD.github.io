@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiamSDD · Applied AI Engineer</title>
+<meta name="description" content="LiamSDD, Applied AI Engineer and Claude Code specialist. I ship real products fast with AI coding agents, in harnesses that keep the code clean, tested and easy to review. Open to work: remote, EU or Canada.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="canonical" href="https://liamsdd.github.io/">
+<link rel="alternate" hreflang="en" href="https://liamsdd.github.io/">
+<link rel="alternate" hreflang="fr" href="https://liamsdd.github.io/?lang=fr">
+<link rel="alternate" hreflang="x-default" href="https://liamsdd.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://liamsdd.github.io/">
+<meta property="og:title" content="LiamSDD · Applied AI Engineer">
+<meta property="og:description" content="Applied AI Engineer and Claude Code specialist. Aegis, Delegate, Uplyze and open-source tools for coding agents.">
+<meta property="og:image" content="https://liamsdd.github.io/assets/og.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="preload" href="/data/projects.json" as="fetch" crossorigin>
+<link rel="preload" href="/data/media.json" as="fetch" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/boot.js"></script>
+<script src="/js/app.js" defer></script>
+</head>
+<body data-page="home">
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="wordmark" href="/" data-i18n-aria="nav.home" aria-label="LiamSDD, home">LiamSDD</a>
+    <nav class="nav" data-i18n-aria="nav.primary" aria-label="Primary">
+      <a href="/#work" data-i18n="nav.work">Work</a>
+      <a href="/#approach" data-i18n="nav.approach">Approach</a>
+      <a href="/#writing" data-i18n="nav.writing">Writing</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="bar-end">
+      <div class="lang" role="group" data-i18n-aria="nav.lang" aria-label="Language">
+        <a href="?lang=en" hreflang="en" lang="en" data-lang="en">EN</a><span aria-hidden="true">·</span><a href="?lang=fr" hreflang="fr" lang="fr" data-lang="fr">FR</a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme"><span aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <p class="status"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.status1">Open to work</span><span class="mid" aria-hidden="true">·</span><span data-i18n="hero.status2">Remote</span><span class="mid" aria-hidden="true">·</span><span data-i18n="hero.status3">EU or Canada</span></p>
+      <h1 id="hero-title"><span class="name">LiamSDD</span><span class="vh">, </span><span class="role"><span class="r1" data-i18n="hero.role1">Applied AI Engineer</span><span class="vh"> · </span><span class="r2" data-i18n="hero.role2">Claude Code specialist</span></span></h1>
+      <p class="lede" data-i18n="hero.lede">I ship real products fast with AI coding agents, in harnesses that keep the code clean, tested and easy to review.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://delegate-beryl.vercel.app" rel="noopener"><span data-i18n="hero.demo">Try the Delegate demo</span><span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="btn btn-secondary m-full" type="button" data-full="media/reel.mp4" data-poster="media/reel-poster.jpg" data-title="LiamSDD · 90 s" data-i18n="hero.reel">Watch the 90 s reel</button>
+        <a class="btn btn-secondary" href="https://github.com/LiamSDD" rel="noopener" data-i18n="hero.github">GitHub profile</a>
+      </div>
+      <p class="contact-line" data-contact-line hidden></p>
+    </div>
+    <div class="wrap">
+      <dl class="stats" id="stats" data-i18n-aria="hero.stats" aria-label="Highlights"></dl>
+    </div>
+  </section>
+
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <div class="sec-row"><h2 id="work-title" data-i18n="sections.work">Work</h2><span class="sec-meta"><span class="sec-num" aria-hidden="true">01</span><span id="work-meta"></span></span></div>
+        <p class="sec-dek" data-i18n="sections.workDek">Products I founded and the tools I build them with.</p>
+      </header>
+      <div id="projects" class="projects"></div>
+      <p class="also" id="also"></p>
+    </div>
+  </section>
+
+  <section class="section" id="approach" aria-labelledby="approach-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <div class="sec-row"><h2 id="approach-title" data-i18n="sections.approach">How I work</h2><span class="sec-meta"><span class="sec-num" aria-hidden="true">02</span></span></div>
+        <p class="sec-dek" data-i18n="sections.approachDek">AI writes the code fast. The process makes it trustworthy.</p>
+      </header>
+      <ol class="principles">
+        <li data-reveal><span class="p-num">01</span><h3 data-i18n="approach.0.title">Harness-driven development</h3><p data-i18n="approach.0.body">Agents work inside a harness I wrote. Risky commands, leaked secrets and unproven claims are stopped by code, not by a prompt.</p></li>
+        <li data-reveal><span class="p-num">02</span><h3 data-i18n="approach.1.title">Tests and verification</h3><p data-i18n="approach.1.body">Tests first, small reviewable PRs, independent reviews and evals. Nothing is done until it's verified.</p></li>
+        <li data-reveal><span class="p-num">03</span><h3 data-i18n="approach.2.title">Users first</h3><p data-i18n="approach.2.body">I design from what people see and need, then build back to simple, fast flows.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="writing" aria-labelledby="writing-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <div class="sec-row"><h2 id="writing-title" data-i18n="sections.writing">Writing</h2><span class="sec-meta"><span class="sec-num" aria-hidden="true">03</span></span></div>
+        <p class="sec-dek" data-i18n="sections.writingDek">Case studies and notes on building with agents.</p>
+      </header>
+      <ul class="writing-list" id="writing-list"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap foot">
+    <div class="foot-main">
+      <p class="foot-name">LiamSDD</p>
+      <p class="foot-meta" data-i18n="footer.meta">Applied AI Engineer · Claude Code specialist. Open to work: remote, EU or Canada.</p>
+      <p class="contact-line" data-contact-line hidden></p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="https://github.com/LiamSDD" rel="noopener" data-i18n="footer.github">GitHub</a></li>
+      <li><a data-source href="https://github.com/LiamSDD/LiamSDD.github.io" rel="noopener" data-i18n="footer.source">Source of this site</a></li>
+    </ul>
+  </div>
+  <div class="wrap foot-note"><p data-i18n="footer.note">Static HTML and CSS. No trackers, no cookies.</p></div>
+</footer>
+
+<dialog class="player" id="player" aria-labelledby="player-title">
+  <div class="player-inner">
+    <div class="player-bar">
+      <p id="player-title" class="player-title"></p>
+      <button type="button" class="player-close" data-i18n-aria="card.closeLabel" aria-label="Close video"><span data-i18n="card.close">Close</span><kbd aria-hidden="true">Esc</kbd></button>
+    </div>
+    <video controls playsinline preload="none"></video>
+    <p class="player-note"></p>
+  </div>
+</dialog>
+</body>
+</html>

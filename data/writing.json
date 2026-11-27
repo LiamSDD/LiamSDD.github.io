@@ -1,0 +1,59 @@
+{
+  "_help": "Items with an empty href are hidden. Fill in href (and optionally summary/date) to publish one. Order here is the order on the page. Optional fr: {title, summary} for the French page.",
+  "items": [
+    {
+      "type": "Case study",
+      "title": "How I built Delegate with Claude Code",
+      "summary": "Constraints, the plan-fan-out-review loop, what the reviews and evals caught, and what is not done yet.",
+      "href": "https://github.com/LiamSDD/delegate/blob/main/docs/CASE_STUDY.md",
+      "date": "",
+      "fr": {
+        "title": "Comment j'ai construit Delegate avec Claude Code (en anglais)",
+        "summary": "Les contraintes, la boucle plan, répartition et revue, ce que les revues et les evals ont détecté, et ce qui reste à faire."
+      }
+    },
+    {
+      "type": "Case study",
+      "title": "Aegis: protecting game builds without punishing paying players",
+      "summary": "Software protection and licensing for games: the architecture at block level, the trade-offs between protection and player experience, and how a small team shipped it with AI-assisted development.",
+      "href": "/writing/aegis/",
+      "date": "",
+      "fr": {
+        "title": "Aegis : protéger les jeux sans pénaliser les joueurs qui paient",
+        "summary": "Protection logicielle et gestion de licences pour jeux vidéo : l'architecture dans ses grandes lignes, les arbitrages entre protection et expérience des joueurs, et comment une petite équipe l'a livrée avec l'aide de l'IA."
+      }
+    },
+    {
+      "type": "Case study",
+      "title": "Uplyze: one AI workspace for a creator business",
+      "summary": "AI replies and DMs, content, scheduling, competitor intel and a CRM on one database, built on frontier models and the official Meta API, with limits the user controls.",
+      "href": "/writing/uplyze/",
+      "date": "",
+      "fr": {
+        "title": "Uplyze : un seul espace de travail IA pour une activité de créateur",
+        "summary": "Réponses et DM par IA, contenus, planification, veille concurrentielle et CRM sur une seule base de données, avec des modèles de pointe, l'API officielle de Meta et des limites fixées par l'utilisateur."
+      }
+    },
+    {
+      "type": "Article",
+      "title": "",
+      "summary": "",
+      "href": "",
+      "date": ""
+    },
+    {
+      "type": "Article",
+      "title": "",
+      "summary": "",
+      "href": "",
+      "date": ""
+    },
+    {
+      "type": "Article",
+      "title": "",
+      "summary": "",
+      "href": "",
+      "date": ""
+    }
+  ]
+}

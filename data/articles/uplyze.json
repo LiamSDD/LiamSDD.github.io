@@ -1,0 +1,243 @@
+{
+  "id": "uplyze",
+  "project": "uplyze",
+  "icon": "assets/icons/uplyze.png",
+  "en": {
+    "type": "Case study",
+    "title": "Uplyze: one AI workspace for a creator business",
+    "description": "How Uplyze brings AI replies and DMs, content, scheduling, competitor intel and a CRM into one workspace for creators, agencies and businesses.",
+    "lede": "Creators and small businesses that sell through social media juggle DMs on many platforms and a stack of separate tools. Uplyze puts it in one AI workspace. I founded it and build its AI.",
+    "factsLabel": "Key facts",
+    "facts": [
+      [
+        "Role",
+        "CEO, founder and AI engineer"
+      ],
+      [
+        "Product",
+        "All-in-one growth AI for creators, agencies and businesses"
+      ],
+      [
+        "Models",
+        "Anthropic Claude Opus 5.5 and Claude Fable 5.2, OpenAI GPT Astra"
+      ],
+      [
+        "Platform access",
+        "Official Meta API · verified and approved in the Meta developer program"
+      ],
+      [
+        "Pricing",
+        "Credit packs from $9 that never expire"
+      ]
+    ],
+    "numbers": [
+      [
+        "9",
+        "modules on one database"
+      ],
+      [
+        "8",
+        "social networks covered"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "The problem",
+        "body": [
+          "A creator, an agency or a small business selling through social media has the same day every day. DMs arrive on many platforms, comments and follows pile up unanswered, and a lead who asked about prices at midnight has gone cold by morning.",
+          "The usual answer is a stack of tools: a scheduler, an inbox, a CRM, a design tool, a spreadsheet for revenue. Each has its own login and its own copy of the customer. Uplyze replaces that stack with one platform."
+        ]
+      },
+      {
+        "heading": "The product",
+        "body": [
+          "Uplyze covers Instagram, TikTok, Facebook, Threads, YouTube, X, LinkedIn and Pinterest. It is organised as nine modules that share one database: AI Copilot, Content Studio, Auto-Responder, Social Hub, Contracts, Competitor Intel, Creative Maker, Financials and Team, with a CRM pipeline running through them."
+        ]
+      },
+      {
+        "heading": "Who it is for",
+        "list": [
+          "Solo creators, who replace a stack of tools with one place for replies, content and scheduling.",
+          "Agencies, which manage many creator accounts from one workspace, with team roles (owners, managers, chatters, editors and VAs), approvals, per-tab permissions and white-label client reporting.",
+          "Businesses, which use the sales side: a visual pipeline with drag-and-drop stages, lead scoring, predicted close dates and revenue dashboards."
+        ]
+      },
+      {
+        "heading": "The AI features",
+        "list": [
+          "AI Copilot. A strategy-and-execution layer over the other modules. One instruction, such as auditing every account and scheduling the week's content, turns into work across several modules.",
+          "Auto-Responder. It reads incoming DMs, matches the persona and tone the user set, and replies within seconds, around the clock. The pipeline runs from intent detection and profile scanning to persona matching, reply generation and paced delivery. Conversations follow an editable funnel per platform, and qualified leads can be sent to a link the user chooses.",
+          "Auto DMs and campaigns. A workflow engine triggers sequences on events such as a new follower, a comment with a keyword or a received DM, and chains actions like sending a DM, creating a contact or adding to the pipeline. Messages take variables such as {name}, {platform}, {day_of_week} and {last_post_topic}, openers and calls to action are A/B tested live, and follow-ups are spaced automatically so a warm lead is not left waiting.",
+          "Content assistant and scheduling. Content Studio plans, writes, schedules and posts to every network from one composer. Captions follow a brand voice learned from past posts, and hashtags are tuned per platform. Creative Maker generates images, videos and ad creatives.",
+          "Competitor intel. A competitor analysis covering positioning, content mix, posting cadence, audience overlap and strategy gaps, with SWOT and content-gap views.",
+          "And more: an AI lead scorer (0 to 100 per contact), predicted close dates in the CRM, an AI contract analyser that scores an uploaded contract for risk, revenue, retention and churn dashboards with a forecaster, team roles with per-tab permissions, and more than 30 ready-made AI assistants."
+        ]
+      },
+      {
+        "heading": "Control stays with the user",
+        "body": [
+          "An assistant that answers on someone's behalf needs limits the user sets, and a way to step in. Uplyze gives users:"
+        ],
+        "list": [
+          "trigger keywords, or replies to all messages;",
+          "a daily reply limit and a cooldown between replies to the same person;",
+          "quiet hours, throttling and language detection;",
+          "working hours for outreach automations, so cold outreach never goes out in the middle of the night;",
+          "a Live Conversations view where any conversation can be paused, edited or taken over in one click."
+        ]
+      },
+      {
+        "heading": "How it is built",
+        "body": [
+          "The AI runs on frontier models: Anthropic's Claude Opus 5.5 and Claude Fable 5.2, and OpenAI's GPT Astra.",
+          "Uplyze connects to Meta's platforms through the official Meta API, and is verified and approved in the Meta developer program. For a product that acts on users' accounts, building on the official API is the foundation everything else rests on.",
+          "All nine modules share one database. That is what lets the Copilot act across modules, and lets a DM become a contact, a contact a pipeline entry, and a pipeline entry part of the revenue forecast, without copying data between tools."
+        ]
+      },
+      {
+        "heading": "Product choices",
+        "list": [
+          "Credit packs rather than a subscription or a trial: Starter $9 (350 credits), Pro $29 (2,000 credits) and Studio $49 (3,850 credits). Credits never expire, and no credit card is needed to start.",
+          "Automation with limits built in, as listed above.",
+          "One composer, one inbox and one database, so the product replaces tools rather than adding another.",
+          "Persona and tone as settings the user edits, rather than prompt text the user has to write."
+        ]
+      },
+      {
+        "heading": "Usage",
+        "body": [
+          "According to uplyze.ai, the platform's figures are \"1M+ DMs automated\", \"$8M Revenue generated\", \"800+ Active teams\" and \"4.9/5 Avg. rating\". These are the site's own published figures."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "uplyze.ai",
+        "href": "https://uplyze.ai"
+      },
+      {
+        "label": "Uplyze project page and 59 s demo",
+        "href": "/work/uplyze/"
+      }
+    ]
+  },
+  "fr": {
+    "type": "Case study",
+    "title": "Uplyze : un seul espace de travail IA pour une activité de créateur",
+    "description": "Comment Uplyze réunit réponses et DM par IA, contenu, planification, veille concurrentielle et CRM dans un seul espace, pour les créateurs, les agences et les entreprises.",
+    "lede": "Les créateurs et les petites entreprises qui vendent sur les réseaux sociaux jonglent avec des DM sur de nombreuses plateformes et une pile d'outils séparés. Uplyze réunit tout dans un seul espace de travail IA. Je l'ai fondé et j'en développe l'IA.",
+    "factsLabel": "L'essentiel",
+    "facts": [
+      [
+        "Rôle",
+        "PDG, fondateur et ingénieur IA"
+      ],
+      [
+        "Produit",
+        "IA de croissance tout-en-un pour créateurs, agences et entreprises"
+      ],
+      [
+        "Modèles",
+        "Anthropic Claude Opus 5.5 et Claude Fable 5.2, OpenAI GPT Astra"
+      ],
+      [
+        "Accès aux plateformes",
+        "API officielle de Meta · vérifié et approuvé dans le programme développeurs de Meta"
+      ],
+      [
+        "Tarifs",
+        "Packs de crédits dès 9 $, sans date d'expiration"
+      ]
+    ],
+    "numbers": [
+      [
+        "9",
+        "modules sur une seule base de données"
+      ],
+      [
+        "8",
+        "réseaux sociaux couverts"
+      ]
+    ],
+    "sections": [
+      {
+        "heading": "Le problème",
+        "body": [
+          "Un créateur, une agence ou une petite entreprise qui vend sur les réseaux sociaux vit la même journée tous les jours. Les DM arrivent sur de nombreuses plateformes, les commentaires et les abonnements s'accumulent sans réponse, et le prospect qui a demandé un prix à minuit est passé à autre chose le lendemain matin.",
+          "La réponse habituelle, c'est une pile d'outils : un planificateur, une messagerie, un CRM, un outil de design, un tableur pour le chiffre d'affaires. Chacun a son identifiant et sa propre copie du client. Uplyze remplace cette pile par une seule plateforme."
+        ]
+      },
+      {
+        "heading": "Le produit",
+        "body": [
+          "Uplyze couvre Instagram, TikTok, Facebook, Threads, YouTube, X, LinkedIn et Pinterest. Il s'organise en neuf modules qui partagent une seule base de données : AI Copilot, Content Studio, Auto-Responder, Social Hub, Contracts, Competitor Intel, Creative Maker, Financials et Team, reliés par un pipeline CRM."
+        ]
+      },
+      {
+        "heading": "Pour qui",
+        "list": [
+          "Les créateurs solo, qui remplacent une pile d'outils par un seul endroit pour les réponses, les contenus et la planification.",
+          "Les agences, qui gèrent de nombreux comptes de créateurs depuis un seul espace, avec des rôles d'équipe (propriétaires, managers, chatters, monteurs et assistants), des validations, des permissions par onglet et des rapports clients en marque blanche.",
+          "Les entreprises, qui utilisent la partie commerciale : un pipeline visuel avec des étapes en glisser-déposer, le score des prospects, les dates de signature prévues et des tableaux de bord de revenus."
+        ]
+      },
+      {
+        "heading": "Les fonctionnalités IA",
+        "list": [
+          "AI Copilot. Une couche de stratégie et d'exécution au-dessus des autres modules. Une seule instruction, par exemple auditer tous les comptes et planifier les contenus de la semaine, se traduit en actions dans plusieurs modules.",
+          "Auto-Responder. Il lit les DM entrants, adopte le persona et le ton définis par l'utilisateur et répond en quelques secondes, jour et nuit. La chaîne va de la détection d'intention et de l'analyse du profil jusqu'au choix du persona, à la rédaction de la réponse et à un envoi au bon rythme. Les conversations suivent un tunnel modifiable pour chaque plateforme, et les prospects qualifiés peuvent être orientés vers un lien choisi par l'utilisateur.",
+          "DM automatiques et campagnes. Un moteur de workflows déclenche des séquences sur des événements, comme un nouvel abonné, un commentaire contenant un mot-clé ou un DM reçu, et enchaîne des actions : envoyer un DM, créer un contact, l'ajouter au pipeline. Les messages acceptent des variables comme {name}, {platform}, {day_of_week} ou {last_post_topic}, les accroches et les appels à l'action sont testés en A/B en continu, et les relances sont espacées automatiquement pour qu'un prospect intéressé n'attende pas.",
+          "Assistant de contenu et planification. Content Studio planifie, rédige, programme et publie sur tous les réseaux depuis un seul éditeur. Les légendes respectent une voix de marque apprise à partir des anciennes publications, et les hashtags sont adaptés à chaque plateforme. Creative Maker génère images, vidéos et visuels publicitaires.",
+          "Veille concurrentielle. Une analyse des concurrents qui couvre le positionnement, le mix de contenus, le rythme de publication, le recoupement d'audience et les angles morts stratégiques, avec des vues SWOT et écarts de contenu.",
+          "Et aussi : un score de prospect par IA (de 0 à 100 par contact), des dates de signature prévues dans le CRM, un analyseur de contrats par IA qui attribue un score de risque à un contrat importé, des tableaux de bord de revenus, de rétention et d'attrition avec prévisions, des rôles d'équipe avec permissions par onglet, et plus de 30 assistants IA prêts à l'emploi."
+        ]
+      },
+      {
+        "heading": "L'utilisateur garde la main",
+        "body": [
+          "Un assistant qui répond au nom de quelqu'un a besoin de limites fixées par l'utilisateur, et d'un moyen de reprendre la main. Uplyze propose :"
+        ],
+        "list": [
+          "des mots-clés déclencheurs, ou une réponse à tous les messages ;",
+          "une limite quotidienne de réponses et un délai minimal entre deux réponses à la même personne ;",
+          "des heures de silence, une limitation du débit et la détection de la langue ;",
+          "des heures de travail pour les automatisations de prospection, pour qu'aucun message ne parte en pleine nuit ;",
+          "une vue Live Conversations pour mettre en pause, corriger ou reprendre n'importe quelle conversation en un clic."
+        ]
+      },
+      {
+        "heading": "Comment il est construit",
+        "body": [
+          "L'IA s'appuie sur des modèles de pointe : Claude Opus 5.5 et Claude Fable 5.2 d'Anthropic, et GPT Astra d'OpenAI.",
+          "Uplyze se connecte aux plateformes de Meta via l'API officielle de Meta, et l'application est vérifiée et approuvée dans le programme développeurs de Meta. Pour un produit qui agit sur les comptes de ses utilisateurs, s'appuyer sur l'API officielle est le socle de tout le reste.",
+          "Les neuf modules partagent une seule base de données. C'est ce qui permet au Copilot d'agir sur plusieurs modules, et à un DM de devenir un contact, puis une opportunité dans le pipeline, puis une ligne de la prévision de revenus, sans recopier les données d'un outil à l'autre."
+        ]
+      },
+      {
+        "heading": "Choix produit",
+        "list": [
+          "Des packs de crédits plutôt qu'un abonnement ou un essai gratuit : Starter à 9 $ (350 crédits), Pro à 29 $ (2 000 crédits) et Studio à 49 $ (3 850 crédits). Les crédits n'expirent jamais et aucune carte bancaire n'est demandée pour commencer.",
+          "Une automatisation avec des limites intégrées, détaillées plus haut.",
+          "Un seul éditeur, une seule messagerie et une seule base de données, pour remplacer des outils plutôt qu'en ajouter un.",
+          "Le persona et le ton sont des réglages que l'utilisateur modifie, pas un prompt qu'il doit rédiger."
+        ]
+      },
+      {
+        "heading": "Utilisation",
+        "body": [
+          "D'après uplyze.ai, la plateforme affiche « 1M+ DMs automated », « $8M Revenue generated », « 800+ Active teams » et « 4.9/5 Avg. rating » (1M+ DM automatisés, 8 M$ de revenus générés, 800+ équipes actives, note moyenne de 4,9/5). Ce sont les chiffres publiés par le site."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "uplyze.ai",
+        "href": "https://uplyze.ai"
+      },
+      {
+        "label": "Page du projet Uplyze et démo de 54 s",
+        "href": "/work/uplyze/"
+      }
+    ]
+  }
+}

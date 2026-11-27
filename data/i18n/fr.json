@@ -54,6 +54,10 @@
     {
       "title": "L'utilisateur au centre",
       "body": "Je pars de ce que les gens voient et attendent, puis je conçois des parcours simples et rapides."
+    },
+    {
+      "title": "La sécurité intégrée",
+      "body": "Protection côté client et serveur issue de mon propre packer commercial : virtualisation du code, anti-falsification, correction de failles, trafic chiffré et authentification complète avec clés validées côté serveur, sessions et HMAC."
     }
   ],
   "card": {

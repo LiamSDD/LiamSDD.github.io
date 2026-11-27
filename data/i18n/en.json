@@ -54,6 +54,10 @@
     {
       "title": "Users first",
       "body": "I design from what people see and need, then build back to simple, fast flows."
+    },
+    {
+      "title": "Security built in",
+      "body": "Client- and server-side protection from my own commercial packer: code virtualisation, anti-tamper, exploit patching, encrypted traffic, and full authentication with server-validated keys, sessions and HMAC."
     }
   ],
   "card": {

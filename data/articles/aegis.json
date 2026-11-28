@@ -11,11 +11,11 @@
     "facts": [
       [
         "Role",
-        "Founder and lead engineer"
+        "CEO, founder and AI engineer"
       ],
       [
         "Timeline",
-        "About 8 months, from late 2025"
+        "May 2024 to August 2026"
       ],
       [
         "Team",
@@ -90,7 +90,7 @@
       {
         "heading": "How it was built",
         "body": [
-          "I was founder and lead engineer. Over about 8 months from late 2025, I designed and built the native engine, the licensing server and the app, with help from a few engineers in my network.",
+          "I was CEO, founder and AI engineer. From May 2024 to August 2026, I designed and built the native engine, the licensing server and the app, with help from a few engineers in my network.",
           "A team that small covering native code, a backend and a desktop app needs AI-assisted development to keep pace. It also needs guardrails. When it helped, I worked with coding agents inside an early private version of my own harness, the one now open source as Claude Code Harness Pro Max. That meant hooks that block destructive commands and leaked secrets, written plans before changes, tests first, and nothing counted as done until a test or build had run.",
           "That discipline matters more in security code than anywhere else. A subtle bug in a licence check is a free copy of the game, and a subtle bug in an anti-debug check is a crash on a customer's machine. The agents made code cheap to write. Reviews, tests and checks against real builds decided what shipped."
         ]
@@ -134,11 +134,11 @@
     "facts": [
       [
         "Rôle",
-        "Fondateur et lead dev"
+        "CEO, fondateur et ingénieur IA"
       ],
       [
         "Durée",
-        "Environ 8 mois, à partir de fin 2025"
+        "De mai 2024 à août 2026"
       ],
       [
         "Équipe",
@@ -213,7 +213,7 @@
       {
         "heading": "Comment il a été construit",
         "body": [
-          "J'étais fondateur et lead dev. En environ 8 mois à partir de fin 2025, j'ai conçu et développé le moteur natif, le serveur de licences et l'application, avec l'aide de quelques ingénieurs de mon réseau.",
+          "J'étais CEO, fondateur et ingénieur IA. De mai 2024 à août 2026, j'ai conçu et développé le moteur natif, le serveur de licences et l'application, avec l'aide de quelques ingénieurs de mon réseau.",
           "Une équipe aussi réduite, qui couvre à la fois du code natif, un backend et une application desktop, a besoin du développement assisté par IA pour tenir le rythme. Et de garde-fous. Quand c'était utile, j'ai travaillé avec des agents de code dans une première version privée de mon propre cadre de travail, celui qui est aujourd'hui open source sous le nom Claude Code Harness Pro Max : des hooks qui bloquent les commandes destructrices et les fuites de secrets, un plan écrit avant chaque changement, les tests d'abord, et rien de terminé tant qu'un test ou un build n'a pas tourné.",
           "Cette rigueur compte encore plus dans du code de sécurité. Un bug subtil dans une vérification de licence, c'est une copie gratuite du jeu ; un bug subtil dans l'anti-debug, c'est un plantage chez un client. Les agents ont rendu le code bon marché à écrire. Ce sont les revues, les tests et les essais sur de vrais builds qui ont décidé de ce qui partait en production."
         ]

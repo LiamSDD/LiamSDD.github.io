@@ -9,7 +9,7 @@
       "kind": "Product · Founder",
       "tagline": "Software protection and licensing for games and desktop apps.",
       "summary": "Code virtualisation, encryption at rest, licence keys and anti-tamper, enforced client and server side.",
-      "role": "Founder and lead engineer, about 8 months with a small team.",
+      "role": "CEO, founder and AI engineer, May 2024 to August 2026, with a small team.",
       "stackLabel": "Stack",
       "stack": [
         "C++",
@@ -58,7 +58,7 @@
         {
           "heading": "My role",
           "body": [
-            "Founder and lead engineer. I designed and built the native protection engine in C and C++, the licensing server, and the React and Electron app developers use to protect a build, over about 8 months from late 2025, with help from a few engineers in my network."
+            "CEO, founder and AI engineer. I designed and built the native protection engine in C and C++, the licensing server, and the React and Electron app developers use to protect a build, from May 2024 to August 2026, with help from a few engineers in my network."
           ]
         },
         {
@@ -72,7 +72,7 @@
         "kind": "Produit · Fondateur",
         "tagline": "Protection logicielle et gestion de licences pour jeux vidéo et applications desktop.",
         "summary": "Virtualisation du code, chiffrement au repos, clés de licence et anti-falsification, côté client comme côté serveur.",
-        "role": "Fondateur et lead dev, environ 8 mois avec une petite équipe.",
+        "role": "CEO, fondateur et ingénieur IA, de mai 2024 à août 2026, avec une petite équipe.",
         "numbers": [
           {
             "value": "3 000+",
@@ -107,7 +107,7 @@
           {
             "heading": "Mon rôle",
             "body": [
-              "Fondateur et lead dev. J'ai conçu et développé le moteur de protection natif en C et C++, le serveur de licences, et l'application React et Electron que les développeurs utilisent pour protéger un build. Environ 8 mois de travail à partir de fin 2025, avec l'aide de quelques ingénieurs de mon réseau."
+              "CEO, fondateur et ingénieur IA. J'ai conçu et développé le moteur de protection natif en C et C++, le serveur de licences, et l'application React et Electron que les développeurs utilisent pour protéger un build, de mai 2024 à août 2026, avec l'aide de quelques ingénieurs de mon réseau."
             ]
           },
           {
@@ -560,7 +560,7 @@
       ],
       "numbers": [
         {
-          "value": "136",
+          "value": "145",
           "label": "tests"
         },
         {
@@ -647,7 +647,7 @@
         ],
         "numbers": [
           {
-            "value": "136",
+            "value": "145",
             "label": "tests"
           },
           {

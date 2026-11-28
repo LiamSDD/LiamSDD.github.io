@@ -158,7 +158,7 @@
       "links": [
         {
           "label": "Live demo",
-          "href": "https://delegate-beryl.vercel.app",
+          "href": "https://trydelegate.app",
           "primary": true
         },
         {
